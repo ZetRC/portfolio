@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./layout/style.css">
+    <link rel="stylesheet" href="./layout/slick.css">
+    <link rel="stylesheet" href="./layout/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbarContent" id="navbar-cont">
+            <li id="homeButton">Home</li>
+            <li id="aboutButton">About</li>
+            <li id="portfolioButton">Projects</li>
+            <li id="contactButton">Contact</li>
+        </ul>
+        <div id="slidebar-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <div class="bodyContent">
+        <section class="home" id="homeSection">
+            <div class="messageContainer">
+                <h1>Hello,i'm Zet Rosas</h1>
+                <h2>I'm a front-end software developer</h2>
+                <img src="https://mattfarley.ca/img/mf-avatar.svg" alt="">
+            </div>
+        </section>
+        <section class="about" id="aboutSection">
+            <div class="sectionTitle">About</div>
+            <div class="aboutContent">
+                <div class="skillsRow">
+                    <div class="skills-cont">
+                        <div>
+                            <i class="fas fa-laptop"></i>
+                            <h2>Responsive</h2>
+                            <p>My layouts will be responsive in every device </p>
+                        </div>
+                        <div>
+                            <i class="fas fa-cogs"></i>
+                            <h2>Dynamic</h2>
+                            <p>I love using new libraries to bring my projects to life</p>
+                        </div>
+                    </div>
+                    <div class="skills-cont">
+                        <div>
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h2>Fast</h2>
+                            <p>Fast load times and lag free interaction</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-lightbulb"></i>
+                            <h2>Intuitive</h2>
+                            <p>I enjoy making simple and intuitive layouts!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="per-data">            
+                </div>
+                <div class="skills-cont">
+                    <img src="https://i.pinimg.com/originals/b5/bb/80/b5bb80994bc3ecdcd5b989250e6b7746.png" alt="">
+                    <div class="skillsTable">
+                        <div class="skill-element">
+                            <div class="skills">
+                                <div class="mt-3 mb-3">
+                                    <h3>skills</h3>
+                                </div>
+                                <div>
+                                    <div class="text1">HTML</div>
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div>
+                                    <div class="text1">CSS</div>
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div>
+                                    <div class="text1">SASS</div>
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div>
+                                    <div class="text1">Javascript</div>
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div>
+                                    <div class="text1">Jquery</div>
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div>
+                                    <div class="text1">Bootstrap</div>
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div>
+                                    <div class="text1">Git</div>
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div>
+                                    <div class="text1">Github</div>
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolioSection">
+            <div class="sectionTitle">Projects</div>
+            <div class="portfolio-cont">
+                <div class="project-prev">
+                    <div class="imageBackground">
+                        <img src="/images/_C__Users_Zet_Documents_Portfolio_portfolio_galery_online_galery_index.html.png" alt="">
+                        <!-- <img src="./images/zetrc.github.io_weather_app_ (1).png" alt=""> -->
+                        <!-- <img src="/images/zetrc.github.io_stopwatch_.png" alt=""> -->
+                    </div>
+                </div>
+                <div class="projectInfo">
+                    <div class="projectName">FWCOM</div>
+                    <div class="project-desc">This online galery will allow you to watch really cool and endless images. The app is completely functional,responsive and was created with the sole purpose of improving coding skills.</div>
+                    <div class="categories">
+                        <div><i class="fas fa-cog"></i>dinamic content</div>
+                        <div><i class="fas fa-palette"></i>Web design</div>
+                        <div><i class="fas fa-plug"></i>API integration</div>
+                    </div>
+                    <a  href="https://zetrc.github.io/online_galery/" target="_blank" rel="noopener noreferrer">
+                        <div class="button">Visit Website</div>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contactSection">
+            <div class="sectionTitle">Contact</div>
+            <div class="contactContent">
+                <div class="contactForm">
+                    <i class="fas fa-comments"></i><h3>Let's get in touch</h3>
+                    <input type="text" placeholder="Name" class="inputElement">
+                    <input type="email" placeholder="Email" class="inputElement">
+                    <textarea name="" id="" cols="30" rows="10" class="inputElement" placeholder="message"></textarea>
+                    <div>Send</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footerContent">
+            <div class="social-med">
+                <a href=""><i class="fab fa-codepen"></i></a>
+                <a href="https://github.com/ZetRC"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/ZetRC"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div><p>Zet Rosas 2019</p></div>
+        </div>
+    </footer>
+
+    
+    <script src="/script/jquery.min.js"></script>
+    <script src="/script/slick.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    
+    <script src="/script/script.js"></script>
+
+
+</body>
+</html>
+
