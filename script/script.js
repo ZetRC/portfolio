@@ -35,7 +35,6 @@ $(document).ready(function(){
       }, scrollTime);
     });
     
-    console.log("yo!")
 
     //init slidebar
 
