@@ -246,6 +246,7 @@ body .bodyContent .portfolio .portfolio-cont .projectInfo .button {
   padding: 10px 25px;
   margin-bottom: 5px;
   cursor: pointer;
+  width: max-content;
   transition: all 0.3s ease;
 }
 body .bodyContent .portfolio .portfolio-cont .projectInfo .button:hover {
@@ -341,12 +342,17 @@ body footer .footerContent div p {
     /* width: min-content !important; */
   }
   .portfolio-cont .projectInfo {
-    width: 80% !important;
+    width: 70% !important;
     margin: 0 auto !important;
-    padding: 0 4.5rem !important;
+    padding: 0 !important;
+    max-width: 40rem;
   }
 }
 @media (max-width: 1025px) {
+  .bodyContent {
+    margin: 0 1rem;
+  }
+
   .navbar .navbarContent {
     display: none;
     background: #333;
@@ -376,9 +382,6 @@ body footer .footerContent div p {
   body {
     font-size: 0.8rem;
   }
-  body .bodyContent {
-    margin: 0 1rem;
-  }
   body .sectionTitle {
     font-size: 2rem !important;
     width: 100% !important;
@@ -407,7 +410,7 @@ body footer .footerContent div p {
   }
   body .portfolio .projectInfo {
     padding: 0 !important;
-    width: 90% !important;
+    width: 80% !important;
     text-align: justify;
   }
 
