@@ -1,0 +1,114 @@
+@media screen and (max-width:1400px){
+    .portfolio-cont{
+        display: block !important;
+        /* width: min-content !important; */
+
+        .projectInfo{
+            width: 70% !important;
+            margin: 0 auto !important;
+            padding: 0 !important;
+            max-width: 40rem;
+
+        
+        }
+    }
+
+}
+
+@media(max-width:1025px){
+    .bodyContent{
+        margin: 0 1rem;
+    }
+    .navbar{
+        .navbarContent{
+        display: none ;
+        background: #333;
+        top: 5rem;
+        color: white;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        li{
+            margin: 1rem;
+        }
+        }
+        
+        i{
+            display: block !important;
+        }
+    }
+    
+    .about{
+        .skills-cont{
+            flex-flow: column;
+
+        }
+    }
+}
+
+@media(min-width:1025px){
+    .navbarContent{
+        display: flex !important;
+    }
+}
+
+@media(max-width:480px){
+    body{
+        font-size: .8rem;
+        
+
+        .sectionTitle{
+            font-size: 2rem !important;
+            width: 100% !important;
+        }
+
+        .home{
+            .messageContainer{
+                top: 3rem !important;
+                img{
+                    width: 10rem !important;
+                    margin-top: 1rem !important;
+                }
+                
+                h1{
+                    font-size: 2rem !important;
+                }
+    
+                h2{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        .about{
+            .skillsRow{
+                i{
+                    font-size: 2rem !important;
+
+                }
+                h2{
+                    font-size:1rem !important;
+                }
+
+                p{
+                    font-size: .7rem;
+                }
+            }
+        }
+
+        .portfolio{
+            .projectInfo{
+                padding: 0 !important;
+                width: 80% !important;
+                text-align: justify;
+            }
+        }
+    }
+
+    .home{
+        .messageContainer{
+            top: 0 !important;
+        }
+    }
+}

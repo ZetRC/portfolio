@@ -52,6 +52,37 @@ $(document).ready(function(){
       })
     })
 
+    var initProjectSlider=(()=>{
+      let i=0
+      if(i==-0){
+        $("#project-prev").fadeToggle(200)
+      }else if(i===1){
+        console.log("hee hee")
+      }else{
+        console.log("yee yee ass haircut")
+      }
+      $("#nextProject-btn").click(function(){
+        i++
+        console.log(i)
+        const projectsNumber=3
+        if(i>projectsNumber){
+          i=0
+        }
+      })
+      
+      $("#prevProject-btn").click(function(){
+        i--
+        console.log(i)
+        const projectsNumber=3
+        if(i<=0){
+          i=projectsNumber
+        }
+      })
+      
+    })
+
+
+    initProjectSlider()
     initCarousel()
     slideBarToggler()
     initAutoscroll()
