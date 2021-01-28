@@ -53,32 +53,57 @@ $(document).ready(function(){
     })
 
     var initProjectSlider=(()=>{
+      let projects=[{
+        name:'<a href="https://zetrc.github.io/ZYA/" target="_blank" rel="noopener noreferrer">ZYA</a>',
+        image:'<img src="./images/zyaCover.webp" alt="">',
+        description:"Check out this online store where you cand find all sort of stuff",
+        categories:'<div><i class="fas fa-cog"></i>dinamic content</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fas fa-plug"></i>API integration</div>'
+      },
+      {
+        name:'<a href="https://zetrc.github.io/online_galery/" target="_blank" rel="noopener noreferrer">FWCOM</a>',
+        image:'<img src="./images/fwcom-preview.webp" alt="">',
+        description:"This online galery will allow you to watch really cool and endless images.",
+        categories:'<div><i class="fas fa-cog"></i>dinamic content</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fas fa-plug"></i>API integration</div>'
+      },
+      {
+        name:'<a href="https://zetrc.github.io/weather_app/" target="_blank" rel="noopener noreferrer">WEAP</a>',
+        image:'<img src="./images/weapCover.png" alt="">',
+        description:"With this app you will be able to find out the weather in any location you want...and some other data as well",
+        categories:'<div><i class="fas fa-cog"></i>dinamic content</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fas fa-plug"></i>API integration</div>'
+      },{
+        name:'<a href="https://zetrc.github.io/stopwatch/" target="_blank" rel="noopener noreferrer">Timeria</a>',
+        image:'<img src="./images/timeriaCover.png" alt="">',
+        description:"You will be able to use a really usefull stopwatch here",
+        categories:'<div><i class="fas fa-cog"></i>dinamic content</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fas fa-plug"></i>javascript app</div>'
+      }]
       let i=0
-      if(i==-0){
-        $("#project-prev").fadeToggle(200)
-      }else if(i===1){
-        console.log("hee hee")
-      }else{
-        console.log("yee yee ass haircut")
-      }
+      const projectsNumber=projects.length-1
       $("#nextProject-btn").click(function(){
         i++
-        console.log(i)
-        const projectsNumber=3
         if(i>projectsNumber){
           i=0
         }
+        changeContent()
       })
       
       $("#prevProject-btn").click(function(){
         i--
-        console.log(i)
-        const projectsNumber=3
-        if(i<=0){
+        if(i<0){
           i=projectsNumber
         }
+        changeContent()
       })
-      
+
+      let changeContent=(()=>{
+        $(".projectName , #projectDescription , #projectCategories , #projectImage").fadeOut(300);
+        setTimeout(function(){
+          $("#projectImage").html(projects[i].image); 
+           $("#projectName").html(projects[i].name); 
+           $("#projectDescription").html(projects[i].description); 
+           $("#projectCategories").html(projects[i].categories); 
+          }, 300);        
+          $(".projectName , #projectDescription , #projectCategories , #projectImage").fadeIn(300)
+      })
     })
 
 

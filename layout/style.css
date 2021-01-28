@@ -241,7 +241,11 @@ body .bodyContent .portfolio .portfolio-cont .project-prev .imageBackground {
   display: flex;
   position: relative;
 }
-body .bodyContent .portfolio .portfolio-cont .project-prev .imageBackground img {
+body .bodyContent .portfolio .portfolio-cont .project-prev .imageBackground .image-cont {
+  width: 100%;
+  display: flex;
+}
+body .bodyContent .portfolio .portfolio-cont .project-prev .imageBackground .image-cont img {
   max-width: 43rem;
   width: 90%;
   position: relative;

@@ -285,14 +285,20 @@ body{
                         display: flex;
                         position: relative;
 
-                        img{
-                            max-width: 43rem;
-                            width: 90%;
-                            position: relative;
-                            top: 1.5vw;
-                            margin: 0 auto;
-                            align-self: baseline;
+                        .image-cont{
+                            width: 100%;
+                            display: flex;
+                            
+                            img{
+                                max-width: 43rem;
+                                width: 90%;
+                                position: relative;
+                                top: 1.5vw;
+                                margin: 0 auto;
+                                align-self: baseline;
+                            }
                         }
+
 
                         i{
                             display: flex;
