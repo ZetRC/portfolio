@@ -1,5 +1,9 @@
 //general clases
 
+section{
+    padding-bottom: 10rem  ;
+}
+
 img{
     width: 100%;
     height: auto;
@@ -117,14 +121,17 @@ body{
                 cursor:pointer;
                 font-weight: bold;
                 font-size: 1.5rem;
-                transition:all .1s ease;
+                transition:all .3s ease;
 
-                &:hover{
-                    border-bottom: 3px solid white;
-                }
+               
             }
         }
     }
+
+    .active-selector{
+        color: #5aaaff;
+    }
+
     .bodyContent{
     
         .home{
@@ -186,6 +193,9 @@ body{
                         display: block;
                         font-size: 4rem;
                         text-align: center;
+                        color: #375291;
+                        padding-bottom: .5rem;
+                    
                     }
 
                     div{
@@ -230,7 +240,7 @@ body{
                                         font-size: 1.2rem;
                                     }
                                     i{
-                                        color: #000000;
+                                        color: #407bff;
                                         font-size: 1.2rem;
                                         display: flex;
                                         align-items: center;
@@ -238,7 +248,7 @@ body{
         
                                     div{
                                         width:20rem;
-                                        margin: 1rem 0;
+                                        margin: .6rem 0;
                                         font-weight: bold;
                                         opacity: .6;
     
@@ -352,6 +362,7 @@ body{
                             margin: 5px 0;
                             font-weight: bold;
                             opacity: .6;
+                            text-transform: capitalize;
                         }
                     }
 
@@ -368,6 +379,7 @@ body{
             i{
                 font-size:5rem;
                 color: #000000;
+                transition: all .5s ease;
             }
 
             .contactContent{
@@ -465,4 +477,4 @@ body{
 
 
 
-@import "./responsive-layout"
+@import "./responsive-layout";

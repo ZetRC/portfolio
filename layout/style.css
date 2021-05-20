@@ -1,3 +1,7 @@
+section {
+  padding-bottom: 10rem;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -104,10 +108,10 @@ body .navbar ul li {
   cursor: pointer;
   font-weight: bold;
   font-size: 1.5rem;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
 }
-body .navbar ul li:hover {
-  border-bottom: 3px solid white;
+body .active-selector {
+  color: #5aaaff;
 }
 body .bodyContent .home {
   width: 100%;
@@ -162,6 +166,8 @@ body .bodyContent .about .aboutContent .skillsRow i {
   display: block;
   font-size: 4rem;
   text-align: center;
+  color: #375291;
+  padding-bottom: 0.5rem;
 }
 body .bodyContent .about .aboutContent .skillsRow div {
   text-align: justify;
@@ -201,14 +207,14 @@ body .bodyContent .about .aboutContent .skills-cont .skillsTable .skill-element 
   font-size: 1.2rem;
 }
 body .bodyContent .about .aboutContent .skills-cont .skillsTable .skill-element .skills div i {
-  color: #000000;
+  color: #407bff;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
 }
 body .bodyContent .about .aboutContent .skills-cont .skillsTable .skill-element .skills div div {
   width: 20rem;
-  margin: 1rem 0;
+  margin: 0.6rem 0;
   font-weight: bold;
   opacity: 0.6;
 }
@@ -290,6 +296,7 @@ body .bodyContent .portfolio .portfolio-cont .projectInfo .categories div {
   margin: 5px 0;
   font-weight: bold;
   opacity: 0.6;
+  text-transform: capitalize;
 }
 body .bodyContent .portfolio .portfolio-cont .projectInfo .categories div i {
   margin-right: 0.6rem;
@@ -300,6 +307,7 @@ body .bodyContent .contact img {
 body .bodyContent .contact i {
   font-size: 5rem;
   color: #000000;
+  transition: all 0.5s ease;
 }
 body .bodyContent .contact .contactContent {
   display: flex;
