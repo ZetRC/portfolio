@@ -436,6 +436,11 @@ body{
                     color: #cccccc;
                     font-weight: bold;
                     transition:all .3s;
+
+                    div{
+                        display: flex;
+                        justify-content: center;
+                    }
                     
                 }
             }

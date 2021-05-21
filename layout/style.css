@@ -357,6 +357,10 @@ body .bodyContent .contact .contactContent form {
   font-weight: bold;
   transition: all 0.3s;
 }
+body .bodyContent .contact .contactContent form div {
+  display: flex;
+  justify-content: center;
+}
 body footer {
   width: 100%;
   height: 120px;
