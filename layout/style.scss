@@ -413,11 +413,19 @@ body{
                 input{
                     height: 2.5rem;
                 }
+
+                input[type=submit]{
+                    color: #fff;
+                    background: #407bff;
+                    padding: 0;
+                    font-weight: bold;
+                }
+
                 textarea{
                     height: 12rem;
                 }
 
-                div{
+                form{
                     width: 100%;
                     max-width: 30rem;
                     padding: 15px 0;

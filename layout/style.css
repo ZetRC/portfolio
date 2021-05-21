@@ -336,10 +336,16 @@ body .bodyContent .contact .contactContent input, body .bodyContent .contact .co
 body .bodyContent .contact .contactContent input {
   height: 2.5rem;
 }
+body .bodyContent .contact .contactContent input[type=submit] {
+  color: #fff;
+  background: #407bff;
+  padding: 0;
+  font-weight: bold;
+}
 body .bodyContent .contact .contactContent textarea {
   height: 12rem;
 }
-body .bodyContent .contact .contactContent div {
+body .bodyContent .contact .contactContent form {
   width: 100%;
   max-width: 30rem;
   padding: 15px 0;
@@ -419,6 +425,10 @@ body footer .footerContent div p {
 
   .about .skills-cont {
     flex-flow: column;
+  }
+
+  section {
+    padding: 0 !important;
   }
 }
 @media (min-width: 1025px) {
