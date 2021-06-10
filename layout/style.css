@@ -89,8 +89,6 @@ body .navbar {
 }
 body .navbar i {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
   font-size: 2rem;
   display: none;
 }
@@ -397,7 +395,6 @@ body footer .footerContent div p {
 @media screen and (max-width: 1400px) {
   .portfolio-cont {
     display: block !important;
-    /* width: min-content !important; */
   }
   .portfolio-cont .projectInfo {
     width: 70% !important;
@@ -413,18 +410,30 @@ body footer .footerContent div p {
 
   .navbar .navbarContent {
     display: none;
-    background: #333;
-    top: 5rem;
+    background: rgba(0, 0, 0, 0.6);
+    top: 60px;
     color: white;
-    height: auto;
+    height: calc(100vh - 60px);
     width: 100%;
     padding: 0;
+    left: 0;
   }
   .navbar .navbarContent li {
-    margin: 1rem;
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+    padding: 1.5rem 0;
   }
   .navbar i {
     display: block !important;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.5rem;
+    font-size: 1.8rem;
+  }
+  .navbar .active-selector {
+    color: #fff;
+    border: 1px solid;
   }
 
   .about .skills-cont {

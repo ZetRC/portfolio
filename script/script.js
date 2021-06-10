@@ -44,7 +44,11 @@ $(document).ready(function(){
     var slideBarToggler=(()=>{
       
       $("#slidebar-btn").on("click",function(){
-        $("#navbar-cont").slideToggle()
+        /* $("#navbar-cont").slideToggle() */
+        $("#navbar-cont").animate({width:'toggle'},350);
+        /* $('#navbar-cont').toggle({ direction: "left" }, 1000); */
+
+
       })
   
       $("#homeButton , #aboutButton , #portfolioButton , #contactButton").click(function(){
