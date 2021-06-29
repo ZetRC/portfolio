@@ -80,7 +80,7 @@ $(document).ready(function(){
         image:'<img src="./images/fwcom-preview.webp" alt="">',
         description:"This online galery will allow you to watch beautiful and endless images.",
         categories:'<div><i class="fas fa-cog"></i>dinamic content</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fas fa-plug"></i>API integration</div>'
-      },
+      }/* ,
       {
         name:'<a href="https://zetrc.github.io/weather_app/" target="_blank" rel="noopener noreferrer">WEAP</a>',
         image:'<img src="./images/weapCover.png" alt="">',
@@ -91,7 +91,7 @@ $(document).ready(function(){
         image:'<img src="./images/timeriaCover.png" alt="">',
         description:"In this site you will be able to use a really usefull stopwatch",
         categories:'<div><i class="fas fa-cog"></i>dinamic content</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fab fa-js"></i>javascript app</div>'
-      }
+      } */
     ]
       let i=0
       const projectsNumber=projects.length-1
@@ -153,14 +153,16 @@ $(document).ready(function(){
         }
         //runs animation on contact icon when it is visible in viewport
         if ($('#msgIcon').isInViewport()) {
-          const rotateValue = "360deg"
-          $('#msgIcon').css({
-            '-webkit-transform' : 'rotateY(' + rotateValue + ')',
-            '-moz-transform'    : 'rotateY(' + rotateValue + ')',
-            '-ms-transform'     : 'rotateY(' + rotateValue + ')',
-            '-o-transform'      : 'rotateY(' + rotateValue + ')',
-            'transform'         : 'rotateY(' + rotateValue + ')'
-          });
+          setTimeout(()=>{
+            const rotateValue = "360deg"
+            $('#msgIcon').css({
+              '-webkit-transform' : 'rotateY(' + rotateValue + ')',
+              '-moz-transform'    : 'rotateY(' + rotateValue + ')',
+              '-ms-transform'     : 'rotateY(' + rotateValue + ')',
+              '-o-transform'      : 'rotateY(' + rotateValue + ')',
+              'transform'         : 'rotateY(' + rotateValue + ')'
+            });
+          },300)
         }
         
       });
