@@ -1,5 +1,6 @@
 section {
-  padding-bottom: 10rem;
+  /* padding-bottom: 10rem; */
+  padding-bottom: 7rem;
 }
 
 img {
@@ -37,24 +38,41 @@ a:hover {
   display: inline;
 }
 
-.green-btn {
-  color: #4aae71;
-  border: 2px solid #4aae71;
-  transition: all 0.3s ease;
-}
-.green-btn:hover {
-  color: #ffffff;
-  background: #4aae71;
+/* .green-btn{
+    color: #4aae71;
+    border: 2px solid #4aae71;
+    transition: all .3s ease;
+
+    &:hover{
+        color: #ffffff;
+        background: #4aae71;
+    }
 }
 
-.yellow-btn {
-  color: #fbad10;
-  border: 2px solid #fbad10;
+.yellow-btn{
+    color:#fbad10;
+    border: 2px solid #fbad10;
+    transition:all .3s ease;
+    &:hover{
+        color:#ffffff;
+        background:#fbad10;
+    }
+} */
+.blue-btn {
+  color: #fff;
+  border: 1px solid #407bff;
+  background-color: #407bff;
   transition: all 0.3s ease;
+  /* &:hover{
+      color: #ffffff;
+      background: #407bff;
+  } */
 }
-.yellow-btn:hover {
-  color: #ffffff;
-  background: #fbad10;
+
+.blue-outline-btn {
+  color: #407bff;
+  background: #fff;
+  border: 1px solid;
 }
 
 body {
@@ -80,7 +98,7 @@ body .sectionTitle {
 }
 body .navbar {
   width: 100%;
-  height: 60px;
+  height: 70px;
   background: #000000;
   color: #ffffff;
   position: fixed;
@@ -99,17 +117,26 @@ body .navbar ul {
   align-items: flex-end;
   position: absolute;
   right: 0;
+  margin: 0;
 }
 body .navbar ul li {
   list-style: none;
-  margin: 0 25px;
   cursor: pointer;
   font-weight: bold;
   font-size: 1.5rem;
   transition: all 0.3s ease;
+  /* margin: 0 25px; */
+  padding-bottom: 0.5rem;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 body .active-selector {
   color: #5aaaff;
+  border-bottom: 5px solid;
+  /* background: white;
+  color: black;
+  padding: 0 2.5rem;
+  border-radius: 1rem 1rem 0px 0; */
 }
 body .bodyContent .home {
   width: 100%;
