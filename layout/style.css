@@ -81,6 +81,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #606060;
 }
 body section {
   margin: 1.5rem 0;
@@ -131,7 +132,8 @@ body .navbar ul li {
   padding-left: 30px;
 }
 body .active-selector {
-  color: #5aaaff;
+  /* color: #5aaaff; */
+  color: #8ac3ff;
   border-bottom: 5px solid;
   /* background: white;
   color: black;
@@ -191,6 +193,7 @@ body .bodyContent .about .aboutContent .skillsRow i {
   display: block;
   font-size: 4rem;
   text-align: center;
+  /* color: $darkBlue; */
   color: #375291;
   padding-bottom: 0.5rem;
 }
@@ -331,7 +334,8 @@ body .bodyContent .contact img {
 }
 body .bodyContent .contact i {
   font-size: 5rem;
-  color: #000000;
+  /* color: #000000; */
+  color: #1964b5;
   transition: all 0.5s ease;
 }
 body .bodyContent .contact .contactContent {
@@ -345,7 +349,11 @@ body .bodyContent .contact .contactContent h3 {
   width: 80%;
   margin: 1rem auto;
   font-weight: bold;
-  color: #000000;
+  /* color: #000000; */
+  /* color: #5e6874; */
+  /* color: $darkBlue; */
+  color: #000;
+  margin-bottom: 2.5rem;
 }
 body .bodyContent .contact .contactContent input, body .bodyContent .contact .contactContent textarea {
   display: block;
@@ -354,7 +362,8 @@ body .bodyContent .contact .contactContent input, body .bodyContent .contact .co
   resize: none;
   border-radius: 20px;
   border: none;
-  border: 1px solid #cccccc;
+  /* border: 1px solid #cccccc; */
+  border: 1px solid #dee2e6;
   padding: 1rem;
   outline: none;
 }
@@ -363,9 +372,11 @@ body .bodyContent .contact .contactContent input {
 }
 body .bodyContent .contact .contactContent input[type=submit] {
   color: #fff;
-  background: #407bff;
+  background: #1964b5;
   padding: 0;
   font-weight: bold;
+  height: 3rem;
+  font-size: 1.1rem;
 }
 body .bodyContent .contact .contactContent textarea {
   height: 12rem;
