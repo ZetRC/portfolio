@@ -44,11 +44,7 @@ $(document).ready(function(){
     var slideBarToggler=(()=>{
       
       $("#slidebar-btn").on("click",function(){
-        /* $("#navbar-cont").slideToggle() */
         $("#navbar-cont").animate({width:'toggle'},350);
-        /* $('#navbar-cont').toggle({ direction: "left" }, 1000); */
-
-
       })
   
       $("#homeButton , #aboutButton , #portfolioButton , #contactButton").click(function(){
@@ -169,9 +165,33 @@ $(document).ready(function(){
   
     })
 
+    var viewportNotOnTop = function(){
+      $(window).scroll(function (event) {
+        /* $(window).on("scroll ready",function (event) { */
+        var scroll = $(window).scrollTop();
+        console.log(scroll)
+        if(scroll > 0 ){
+          $("#up-btn").fadeIn()
+          $("#navbar").addClass("smaller-nav")
+        }
+        if(scroll == 0){
+          $("#up-btn").fadeOut()
+          $("#navbar").removeClass("smaller-nav")
+        }
+      });
+
+      $("#up-btn").click(function(){
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("html").offset().top
+        }, 500);
+      })
+
+    }
+
     initProjectSlider()
     initCarousel()
     slideBarToggler()
     initAutoscroll()
     hoverSection()
+    viewportNotOnTop()
   });

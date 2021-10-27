@@ -28,6 +28,7 @@
         width: 100%;
         padding: 0;
         left: 0;
+        position: fixed;
 
 
         li{
@@ -49,6 +50,10 @@
         .active-selector{
             color:#fff;
             border:1px solid ;
+        }
+
+        .icons-cont{
+            display: none !important;
         }
     }
     

@@ -90,23 +90,37 @@ body .sectionTitle {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  border-bottom: 5px solid #ededed;
   width: 80%;
   margin: 0 auto;
-  padding-bottom: 5px;
-  color: #919191;
+  padding-bottom: 15px;
   padding-top: 6rem;
+  /* color: #919191;
+  border-bottom: 5px solid #ededed; */
+  color: #130f40;
+  border-bottom: 5px solid #e8e8f1;
 }
 body .navbar {
   width: 100%;
-  height: 70px;
-  background: #000000;
-  color: #ffffff;
+  height: 80px;
+  background: #fff;
+  /* color: #ffffff; */
   position: fixed;
   top: 0;
   z-index: 99;
+  transition: all 0.5s ease;
 }
-body .navbar i {
+body .navbar .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+body .navbar span {
+  font-size: 1.75rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  height: min-content;
+}
+body .navbar .fa-bars {
   position: absolute;
   font-size: 2rem;
   display: none;
@@ -115,30 +129,43 @@ body .navbar ul {
   width: auto;
   height: 100%;
   display: flex;
-  align-items: flex-end;
-  position: absolute;
-  right: 0;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
   margin: 0;
 }
 body .navbar ul li {
   list-style: none;
   cursor: pointer;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: all 0.3s ease;
-  /* margin: 0 25px; */
-  padding-bottom: 0.5rem;
   padding-right: 30px;
   padding-left: 30px;
 }
+body .navbar .icons-cont {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 4rem;
+}
+body .navbar .icons-cont a {
+  color: inherit;
+}
+body .navbar .icons-cont i,
+body .navbar .icons-cont svg {
+  margin: 0 0.8rem;
+  font-size: 1.5rem;
+}
+body .smaller-nav {
+  height: 70px !important;
+  background: #130f40 !important;
+  color: #ffffff;
+}
 body .active-selector {
-  /* color: #5aaaff; */
-  color: #8ac3ff;
-  border-bottom: 5px solid;
-  /* background: white;
-  color: black;
-  padding: 0 2.5rem;
-  border-radius: 1rem 1rem 0px 0; */
+  color: #2273f8;
+  /* border-bottom: 5px solid; */
+  font-size: 1.15;
 }
 body .bodyContent .home {
   width: 100%;
@@ -191,11 +218,18 @@ body .bodyContent .about .aboutContent .skillsRow .skills-cont div {
 }
 body .bodyContent .about .aboutContent .skillsRow i {
   display: block;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
-  /* color: $darkBlue; */
-  color: #375291;
-  padding-bottom: 0.5rem;
+  color: #407bff;
+  background-color: #e7eeff;
+  border-radius: 10px;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body .bodyContent .about .aboutContent .skillsRow div {
   text-align: justify;
@@ -216,6 +250,7 @@ body .bodyContent .about .aboutContent .skills-cont img {
   max-width: 32rem;
   height: auto;
   align-self: center;
+  padding-top: 2rem;
 }
 body .bodyContent .about .aboutContent .skills-cont .skillsTable {
   float: right;
@@ -335,7 +370,8 @@ body .bodyContent .contact img {
 body .bodyContent .contact i {
   font-size: 5rem;
   /* color: #000000; */
-  color: #1964b5;
+  /* color: $darkBlue; */
+  color: #130f40;
   transition: all 0.5s ease;
 }
 body .bodyContent .contact .contactContent {
@@ -397,6 +433,31 @@ body .bodyContent .contact .contactContent form div {
   display: flex;
   justify-content: center;
 }
+body .up-btn {
+  background-color: #407bff;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+body .up-btn i,
+body .up-btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.75rem;
+  color: #fff;
+}
+body .show-btn {
+  bottom: 0;
+  opacity: 1;
+}
 body footer {
   width: 100%;
   height: 120px;
@@ -455,6 +516,7 @@ body footer .footerContent div p {
     width: 100%;
     padding: 0;
     left: 0;
+    position: fixed;
   }
   .navbar .navbarContent li {
     width: 100%;
@@ -472,6 +534,9 @@ body footer .footerContent div p {
   .navbar .active-selector {
     color: #fff;
     border: 1px solid;
+  }
+  .navbar .icons-cont {
+    display: none !important;
   }
 
   .about .skills-cont {
