@@ -44,7 +44,8 @@ $(document).ready(function(){
     var slideBarToggler=(()=>{
       
       $("#slidebar-btn").on("click",function(){
-        $("#navbar-cont").animate({width:'toggle'},350);
+        /* $("#navbar-cont").animate({width:'toggle'},350); */
+        $("#navbar-cont").fadeToggle(300)
       })
   
       $("#homeButton , #aboutButton , #portfolioButton , #contactButton").click(function(){

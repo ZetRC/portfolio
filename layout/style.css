@@ -509,20 +509,37 @@ body footer .footerContent div p {
 
   .navbar .navbarContent {
     display: none;
-    background: rgba(0, 0, 0, 0.6);
-    top: 60px;
-    color: white;
-    height: calc(100vh - 60px);
-    width: 100%;
+    top: 80px;
     padding: 0;
-    left: 0;
+    right: 10px;
     position: fixed;
+    width: fit-content;
+    height: fit-content;
+    background: #fff;
+    color: black;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+  .navbar .navbarContent:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #dcdcdc;
+    position: absolute;
+    top: -10px;
+    right: 15px;
   }
   .navbar .navbarContent li {
     width: 100%;
-    margin: 1rem auto;
+    margin: 0 auto;
     text-align: center;
-    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+  }
+  .navbar .navbarContent li:last-child {
+    margin-bottom: 0;
   }
   .navbar i {
     display: block !important;
@@ -532,8 +549,7 @@ body footer .footerContent div p {
     font-size: 1.8rem;
   }
   .navbar .active-selector {
-    color: #fff;
-    border: 1px solid;
+    color: #2273f8;
   }
   .navbar .icons-cont {
     display: none !important;
@@ -578,6 +594,8 @@ body footer .footerContent div p {
   }
   body .about .skillsRow i {
     font-size: 2rem !important;
+    width: 5rem !important;
+    height: 5rem !important;
   }
   body .about .skillsRow h2 {
     font-size: 1rem !important;
