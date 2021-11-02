@@ -1,15 +1,37 @@
 
 $(document).ready(function(){
   
-    var initCarousel=(()=>{
-        $('.portfolioContent').slick({
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 1
-        });
+/*     var initCarousel=(()=>{
+      $('.portfolioContent').slick({
+        autoplay:true,
+        autoplaySpeed:2500,
+        centerMode: true,
+        centerPadding: '100px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
     
     })
-
+ */
 
     var initAutoscroll=(()=>{
       
@@ -170,7 +192,7 @@ $(document).ready(function(){
       $(window).scroll(function (event) {
         /* $(window).on("scroll ready",function (event) { */
         var scroll = $(window).scrollTop();
-        console.log(scroll)
+        /* console.log(scroll) */
         if(scroll > 0 ){
           $("#up-btn").fadeIn()
           $("#navbar").addClass("smaller-nav")
@@ -190,7 +212,7 @@ $(document).ready(function(){
     }
 
     initProjectSlider()
-    initCarousel()
+/*     initCarousel() */
     slideBarToggler()
     initAutoscroll()
     hoverSection()

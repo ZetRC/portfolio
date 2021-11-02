@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZetRC</title>
     <link rel="stylesheet" href="./layout/style.css">
-    <link rel="stylesheet" href="./layout/slick.css">
-    <link rel="stylesheet" href="./layout/slick-theme.css">
+    <!-- <link rel="stylesheet" href="./layout/slick.css">
+    <link rel="stylesheet" href="./layout/slick-theme.css"> -->
+    <link rel="stylesheet" href="./script/slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./script/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.0.2/aos.css">
@@ -18,7 +20,6 @@
         <div class="container ">
             <span>ZETRC</span>
             <div class="sidebar-content" id="sidebar-cont" style="display: flex;">
-
                 <ul class="navbarContent" id="navbar-cont">
                     <li id="homeButton">Home</li>
                     <li id="aboutButton">About</li>
@@ -43,12 +44,13 @@
         </div>
     </nav>
     <div class="bodyContent">
-        <section class="home" id="homeSection" data-selector="#homeButton">
+        <section class="home odd-background" id="homeSection" data-selector="#homeButton">
             <div class="messageContainer">
                 <h1 data-aos="fade-up" data-aos-delay="500">Hello!, i am Zet Rosas</h1>
                 <h2 data-aos="fade-up" data-aos-delay="750">I'm a front-end software developer</h2>
                 <img src="./images/mf-avatar.svg" alt="" data-aos="fade-up" data-aos-delay="1000">
             </div>
+            <span class="stripe-bottom"></span>
         </section>
         <section class="about" id="aboutSection">
             <div class="sectionTitle" data-aos="fade-up">About</div>
@@ -133,9 +135,28 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio" id="portfolioSection">
-            <div class="sectionTitle" data-aos="fade-up">Personal Projects</div>
-            <div class="portfolio-cont" data-aos="zoom-in" id="portfolioContent" data-aos-delay="250">
+        <section class="portfolio odd-background" id="portfolioSection">
+            <span class="stripe-top"></span>
+            <div class="sectionTitle" data-aos="fade-up">Projects</div>
+            <div class="box-text mb-5">
+                <h2>Personal Projects</h2>
+                <h5>I'm might not be allowed to show real work,but i can show you some cool projects of my own</h5>
+            </div>
+        <!--     <div class="portfolioContent" style="max-width: 80rem;margin: 5rem auto;">
+                <div>
+                    <img src="./images/rstest.webp" alt="">
+                </div>
+                <div>
+                    <img src="./images/zyaCover.webp" alt="">
+                </div>
+                <div>
+                    <img src="./images/recipieCover.webp" alt="">
+                </div>
+                <div>
+                    <img src="./images/fwcom-preview.webp" alt="">
+                </div>
+            </div> -->
+<!--             <div class="portfolio-cont d-none" data-aos="zoom-in" id="portfolioContent" data-aos-delay="250">
                 <div class="project-prev">
                     <div class="imageBackground">
                         <div class="image-cont" id="projectImage">
@@ -156,10 +177,75 @@
                         <div class="button blue-btn" id="nextProject-btn">Next</div>
                     </div>
                 </div>
+            </div> -->
+            <div class="projects-grid" id="portfolioContent" data-aos="fade-in">
+                <!-- <div class="container "> -->
+                    <div class="row">
+                        <a class="col-12 col-md-4" href="https://zetrc.github.io/recipes-app/" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/recipieCover.webp" alt="">
+                            <div class="project-info">
+                                <h3>ReciPie</h3>
+                                <h5>A recipes website</h5>
+                            </div>
+                        </a>
+                        <a class="col-12 col-md-4" href="https://zetrc.github.io/ZYA/" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/zyaCover.webp" alt="">
+                            <div class="project-info">
+                                <h3>ZYA</h3>
+                                <h5>An online store</h5>
+                            </div>
+                        </a>
+                        <a class="col-12 col-md-4" href="https://zetrc.github.io/re-test/" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/rstest.webp" alt="">
+                            <div class="project-info">
+                                <h3>Real State test</h3>
+                                <h5>A real State website</h5>
+                            </div>
+                        </a>
+                        <a class="col-12 col-md-4" href="https://zetrc.github.io/online_galery/" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/fwcom-preview.webp" alt="">
+                            <div class="project-info">
+                                <h3>FWCOM</h3>
+                                <h5>An online galery</h5>
+                            </div>
+                        </a>
+                        <a class="col-12 col-md-4" href="https://zetrc.github.io/weather_app/" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/weapCover.png" alt="">
+                            <div class="project-info">
+                                <h3>WEAP</h3>
+                                <h5>A Weather app</h5>
+                            </div>
+                        </a>
+                        <a class="col-12 col-md-4" href="https://zetrc.github.io/stopwatch/" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/timeriaCover.png" alt="">
+                            <div class="project-info">
+                                <h3>Stopwatch</h3>
+                                <h5>A stopwatch clock</h5>
+                            </div>
+                        </a>
+                    </div>
+                <!-- </div> -->
             </div>
+            <div class="box-text">
+                <h2>Clients</h2>
+                <h5>People i've worked with</h5>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <img src="http://www.heartofhollywoodcinema.com/img/HOHCinemaBackgroundPlayer.webp" alt="" style="background-color: black; padding: 1rem;" data-aos="flip-left">     
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="./images/numuss sms-logos.jpeg" alt="" data-aos="flip-left">    
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="https://www.upwork.com/static/images/upwork-fb.png" alt="" data-aos="flip-left">    
+                    </div>
+                </div>
+            </div>
+            <span class="stripe-bottom"></span>
         </section>
+        
         <section class="contact" id="contactSection">
-            <div class="sectionTitle" data-aos="fade-up">Contact</div>
+            <div class="sectionTitle" >Contact</div>
             <div class="contactContent" id="contactContent">
                 <form class="contactForm" action="POST" data-netlify="true">
                     <i class="fas fa-comments" id="msgIcon"></i><h3>Let's get in touch</h3>
@@ -170,10 +256,8 @@
                     <input type="Submit" value="Submit Message" >
                 </form>
             </div>
+            <span class="stripe-bottom" style="border-bottom: 150px solid #130f40; bottom: -25px;"></span>
         </section>
-    </div>
-    <div class="up-btn" id="up-btn">
-        <i class="fas fa-arrow-up"></i>
     </div>
     <footer>
         <div class="footerContent">
@@ -191,10 +275,11 @@
             <div><p>Zet Rosas 2019</p></div>
         </div>
     </footer>
-
-    
+    <div class="up-btn" id="up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
     <script src="./script/jquery.min.js"></script>
-    <script src="./script/slick.min.js"></script>
+    <script src="./script/slick-1.8.1/slick-1.8.1/slick/slick.js"></script>
     <script src="./script/script.js"></script>
     <!-- <script src="./script/aos.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.0.2/aos.js"></script>

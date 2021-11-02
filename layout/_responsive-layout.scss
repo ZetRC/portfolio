@@ -1,5 +1,5 @@
 @media screen and (max-width:1400px){
-    .portfolio-cont{
+   /*  .portfolio-cont{
         display: block !important;
 
         .projectInfo{
@@ -10,13 +10,16 @@
 
         
         }
-    }
+    } */
 
 }
 
 @media(max-width:1025px){
-    .bodyContent{
+    /* .bodyContent{
         margin: 0 1rem;
+    } */
+    section{
+        padding: 0 1rem;
     }
     .navbar{
         .navbarContent{
@@ -82,13 +85,48 @@
     }
     
     section{
-        padding: 0 !important;
+        padding: 1rem !important;
     }
 }
 
 @media(min-width:1025px){
     .navbarContent{
         display: flex !important;
+    }
+}
+
+@media(max-width:768px){
+
+    //stripes
+    .stripe-top{
+        border-top: 60px solid white;
+    }
+
+    .stripe-bottom{
+        border-bottom: 60px solid !important;
+    }
+
+    //box text
+
+    .box-text{
+        margin:4rem auto;
+
+        h2{
+            font-size: 1.25rem;
+        }
+
+        h5{
+            font-size: .9rem;
+        }
+
+        img{
+            width:10rem;
+        }
+    }
+
+    //project-grid
+    body .bodyContent .portfolio .projects-grid .col-12 img{
+        padding: 2rem;
     }
 }
 
@@ -108,7 +146,7 @@
 
         .home{
             .messageContainer{
-                top: 3rem !important;
+                top: 8rem !important;
                 img{
                     width: 10rem !important;
                     margin-top: 1rem !important;

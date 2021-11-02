@@ -3,9 +3,66 @@ $darkBlue :#1964b5;
 
 //general clases
 
+.box-text{
+        text-align: center;
+        max-width: 60rem;
+        width: 100%;
+        margin:8rem auto;
+
+        h2{
+            text-transform:uppercase;
+            letter-spacing: .25rem;
+        }
+
+        h5{
+            margin-bottom: 5rem;
+            color: #fff;
+            opacity:.75;
+        }
+
+
+        img{
+            width: 13rem;
+            border-radius: .5rem;
+            max-height: 6rem;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+}
+
 section{
-    /* padding-bottom: 10rem; */
     padding-bottom: 7rem  ;
+    position: relative;
+}
+
+.odd-background{
+    background: #130f40;
+    color: white;
+    .sectionTitle{
+        color:white !important
+    }
+}
+
+.stripe-bottom{
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 100px solid white;
+    position: absolute;
+    bottom: -2px;
+    left: 1px;
+}
+
+.stripe-top{
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 100vw solid transparent;
+    border-top: 100px solid white;
+    position: absolute;
+    top: -2px;
+    left: 0;
 }
 
 img{
@@ -48,27 +105,6 @@ a{
 
 }
 
-/* .green-btn{
-    color: #4aae71;
-    border: 2px solid #4aae71;
-    transition: all .3s ease;
-
-    &:hover{
-        color: #ffffff;
-        background: #4aae71;
-    }
-}
-
-.yellow-btn{
-    color:#fbad10;
-    border: 2px solid #fbad10;
-    transition:all .3s ease;
-    &:hover{
-        color:#ffffff;
-        background:#fbad10;
-    }
-} */
-
 .blue-btn{
     color: #fff;
     border: 1px solid #407bff;
@@ -95,6 +131,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     color: #606060;
+    overflow-x: hidden;
 
     section{
         margin:1.5rem 0;
@@ -104,10 +141,12 @@ body{
         font-size: 3rem;
         font-weight: bold;
         text-align: center;
-        width: 80%;
+        /* width: 80%; */
+        width: 100%;
+        max-width:100rem;
         margin: 0 auto;
         padding-bottom: 15px;
-        padding-top: 6rem;
+        padding-top: 8rem;
         /* color: #919191;
         border-bottom: 5px solid #ededed; */
         color: #130f40;
@@ -117,13 +156,14 @@ body{
     .navbar{
         width: 100%;
         height: 80px;
-        background:#fff;
-        /* color: #ffffff; */
-        
         position: fixed;
         top: 0;
         z-index: +99;
         transition: all .5s ease;
+        /* background:#eef0f5; */
+        background: #130f40;
+        color: #fff;
+
         .container{
             display:flex;
             align-items: center;
@@ -195,14 +235,16 @@ body{
     
         .home{
             width:100%;
-            height:calc(100vh - 80px);
-            min-height: 40rem;
+            /* height:calc(100vh - 80px); */
+            /* top: 80px; */
+            height: 55vh;
+            margin-bottom: 35vh;
             position: relative;
-            top: 80px;
             .messageContainer{
                 text-align: center;
                 position: relative;
-                top: 12rem;
+                top: 14rem;
+                z-index: +90;
                 h1{
                     font-size: 3.5rem;
                     font-weight: bold;
@@ -219,6 +261,7 @@ body{
             }
         }
         .about{
+
             .aboutContent{
                 max-width: 70rem;
                 /* height: 40rem; */
@@ -332,16 +375,60 @@ body{
 
         .portfolio{
             width: 100%;
+            padding: 7rem 0 10rem;
+            position: relative;
 
             h3{
                 font-size: 1.8rem;
                 font-weight: bold;
 
             }
+        
+                
+            .projects-grid{
+                width: 100%;
+                max-width:95rem;
+                margin:0 auto;
+
+                .col-12{
+                    padding:0;
+                    img{
+                        padding:1rem
+                    }
+                }
+
+                a:hover{
+                    .project-info{
+                        opacity: 1;
+                    }
+                }
+
+                .project-info{
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%,-50%);
+                    text-align:center;
+                    background: #00000061;
+                    width:100%;
+                    height:100%;
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0;
+                    transition:all .3s ease-in;
+                    h3,
+                    h5{
+                        color: white;
+                    }
+                }
+            }
+            
 
             
             
-            .portfolio-cont{
+ /*            .portfolio-cont{
                 width: 100% ;
                 max-width: 80rem;
                 height: auto;
@@ -351,7 +438,6 @@ body{
                 .project-prev{
                     max-width: 50rem;
                     width: 100%;
-                    /* height: 40rem; */
                     margin: 0 auto;
                     margin-bottom: 3rem;
 
@@ -435,8 +521,28 @@ body{
                     }
 
                 }
+            } */
+            /*  */
+/*             .slick-slide{
+                img{
+                    transform: scale(.9);
+                    transition: all .3s ease-out;
+                    opacity: .6;
+                }
             }
+            .slick-center{
+                img{
+                    transform: scale(1) !important;
+                    opacity: 1 !important;
+                }
+            }
+            .slick-prev:before, .slick-next:before{
+                color: #130f40 !important;
+            } */
+
+            
         }
+
 
         .contact{
 
@@ -555,7 +661,7 @@ body{
     footer{
         width: 100%;
         height: 120px;
-        background:#000000;
+        background:#130f40;
     
         .footerContent{
             width: auto;
