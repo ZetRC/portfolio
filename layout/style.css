@@ -690,6 +690,10 @@ body footer .footerContent div p {
   }
 
   .stripe-bottom {
+    border-bottom: 60px solid !important;
+  }
+
+  .last-stripe {
     border-bottom: 60px solid #130f40 !important;
   }
 
