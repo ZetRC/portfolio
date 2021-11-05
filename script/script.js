@@ -1,37 +1,4 @@
-
 $(document).ready(function(){
-  
-/*     var initCarousel=(()=>{
-      $('.portfolioContent').slick({
-        autoplay:true,
-        autoplaySpeed:2500,
-        centerMode: true,
-        centerPadding: '100px',
-        slidesToShow: 3,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-    
-    })
- */
 
     var initAutoscroll=(()=>{
       
@@ -75,73 +42,6 @@ $(document).ready(function(){
       })
     })
 
-    var initProjectSlider=(()=>{
-      let projects=[{
-        name:'<a href="https://zetrc.github.io/recipes-app/" target="_blank" rel="noopener noreferrer">ReciPie</a>',
-        image:'<img src="./images/recipieCover.webp" alt="">',
-        description:"With ReciPie you will find endless and delicious recipes",
-        categories:'<div><i class="fab fa-react"></i>React js</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fas fa-plug"></i>API integration</div>'
-      },
-      {
-        name:'<a href="https://zetrc.github.io/ZYA/" target="_blank" rel="noopener noreferrer">ZYA</a>',
-        image:'<img src="./images/zyaCover.webp" alt="">',
-        description:"Check out this online store where you cand find all kind of products",
-        categories:'<div><i class="fas fa-cog"></i>dinamic content</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fas fa-plug"></i>API integration</div>'
-      },
-      {
-        name:'<a href="https://zetrc.github.io/re-test/" target="_blank" rel="noopener noreferrer">Rs page </a>',
-        image:'<img src="./images/rstest.webp" alt="">',
-        description:"Just a nice and simple template for real state purposes",
-        categories:'<div><i class="fas fa-cog"></i>dinamic content</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fas fa-border-all"></i>template material</div>'
-      },
-      {
-        name:'<a href="https://zetrc.github.io/online_galery/" target="_blank" rel="noopener noreferrer">FWCOM</a>',
-        image:'<img src="./images/fwcom-preview.webp" alt="">',
-        description:"This online galery will allow you to watch beautiful and endless images.",
-        categories:'<div><i class="fas fa-cog"></i>dinamic content</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fas fa-plug"></i>API integration</div>'
-      }/* ,
-      {
-        name:'<a href="https://zetrc.github.io/weather_app/" target="_blank" rel="noopener noreferrer">WEAP</a>',
-        image:'<img src="./images/weapCover.png" alt="">',
-        description:"With this app you will be able to find out the weather in any location you want...and some other related data",
-        categories:'<div><i class="fas fa-cog"></i>dinamic content</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fas fa-plug"></i>API integration</div>'
-      },{
-        name:'<a href="https://zetrc.github.io/stopwatch/" target="_blank" rel="noopener noreferrer">Timeria</a>',
-        image:'<img src="./images/timeriaCover.png" alt="">',
-        description:"In this site you will be able to use a really usefull stopwatch",
-        categories:'<div><i class="fas fa-cog"></i>dinamic content</div><div><i class="fas fa-palette"></i>Web design</div><div><i class="fab fa-js"></i>javascript app</div>'
-      } */
-    ]
-      let i=0
-      const projectsNumber=projects.length-1
-      $("#nextProject-btn").click(function(){
-        i++
-        if(i>projectsNumber){
-          i=0
-        }
-        changeContent()
-      })
-      
-      $("#prevProject-btn").click(function(){
-        i--
-        if(i<0){
-          i=projectsNumber
-        }
-        changeContent()
-      })
-
-      let changeContent=(()=>{
-        $(".projectName , #projectDescription , #projectCategories , #projectImage").fadeOut(300);
-        setTimeout(function(){
-          $("#projectImage").html(projects[i].image); 
-           $("#projectName").html(projects[i].name); 
-           $("#projectDescription").html(projects[i].description); 
-           $("#projectCategories").html(projects[i].categories); 
-          }, 300);        
-          $(".projectName , #projectDescription , #projectCategories , #projectImage").fadeIn(300)
-      })
-    })
-
     const hoverSection = (()=>{
       $.fn.isInViewport = function() {
         var elementTop = $(this).offset().top;
@@ -171,7 +71,7 @@ $(document).ready(function(){
           $("#contactButton").addClass("active-selector")
         }
         //runs animation on contact icon when it is visible in viewport
-        if ($('#msgIcon').isInViewport()) {
+        /* if ($('#msgIcon').isInViewport()) {
           setTimeout(()=>{
             const rotateValue = "360deg"
             $('#msgIcon').css({
@@ -182,17 +82,16 @@ $(document).ready(function(){
               'transform'         : 'rotateY(' + rotateValue + ')'
             });
           },300)
-        }
+        } */
         
       });
   
     })
 
-    var viewportNotOnTop = function(){
+    var ifViewportNotOnTop = function(){
       $(window).scroll(function (event) {
         /* $(window).on("scroll ready",function (event) { */
         var scroll = $(window).scrollTop();
-        /* console.log(scroll) */
         if(scroll > 0 ){
           $("#up-btn").fadeIn()
           $("#navbar").addClass("smaller-nav")
@@ -211,10 +110,8 @@ $(document).ready(function(){
 
     }
 
-    initProjectSlider()
-/*     initCarousel() */
     slideBarToggler()
     initAutoscroll()
     hoverSection()
-    viewportNotOnTop()
+    ifViewportNotOnTop()
   });

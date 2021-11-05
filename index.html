@@ -44,13 +44,23 @@
         </div>
     </nav>
     <div class="bodyContent">
-        <section class="home odd-background" id="homeSection" data-selector="#homeButton">
+        <section class="home " id="homeSection" data-selector="#homeButton">
+            <!--  -->
+            <div class="animation-wrapper">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+              </div>
+            <!--  -->
             <div class="messageContainer">
                 <h1 data-aos="fade-up" data-aos-delay="500">Hello!, i am Zet Rosas</h1>
                 <h2 data-aos="fade-up" data-aos-delay="750">I'm a front-end software developer</h2>
                 <img src="./images/mf-avatar.svg" alt="" data-aos="fade-up" data-aos-delay="1000">
             </div>
-            <span class="stripe-bottom"></span>
+            <div class="home-bg odd-background">
+                <span class="stripe-bottom"></span>
+            </div>
         </section>
         <section class="about" id="aboutSection">
             <div class="sectionTitle" data-aos="fade-up">About</div>
@@ -142,43 +152,7 @@
                 <h2>Personal Projects</h2>
                 <h5>I might not be allowed to show real work,but i can show you some cool projects of my own</h5>
             </div>
-        <!--     <div class="portfolioContent" style="max-width: 80rem;margin: 5rem auto;">
-                <div>
-                    <img src="./images/rstest.webp" alt="">
-                </div>
-                <div>
-                    <img src="./images/zyaCover.webp" alt="">
-                </div>
-                <div>
-                    <img src="./images/recipieCover.webp" alt="">
-                </div>
-                <div>
-                    <img src="./images/fwcom-preview.webp" alt="">
-                </div>
-            </div> -->
-<!--             <div class="portfolio-cont d-none" data-aos="zoom-in" id="portfolioContent" data-aos-delay="250">
-                <div class="project-prev">
-                    <div class="imageBackground">
-                        <div class="image-cont" id="projectImage">
-                            <img src="./images/recipieCover.webp" >
-                        </div>
-                    </div>
-                </div>
-                <div class="projectInfo" id="project-1">
-                    <div class="projectName" id="projectName"><a href="https://zetrc.github.io/recipes-app/" target="_blank" rel="noopener noreferrer">ReciPie</a></div>
-                    <div class="project-desc" id="projectDescription">With ReciPie you will find endless and delicious recipes</div>
-                    <div class="categories" id="projectCategories">
-                        <div><i class="fab fa-react"></i>React js</div>
-                        <div><i class="fas fa-palette"></i>Web design</div>
-                        <div><i class="fas fa-plug"></i>API integration</div>
-                    </div>
-                    <div class="buttons-cont">
-                        <div class="button blue-outline-btn" id="prevProject-btn">Prev</div>
-                        <div class="button blue-btn" id="nextProject-btn">Next</div>
-                    </div>
-                </div>
-            </div> -->
-            <div class="projects-grid" id="portfolioContent" data-aos="fade-in">
+            <div class="projects-grid " id="portfolioContent" data-aos="zoom-in" data-aos-delay="0">
                 <!-- <div class="container "> -->
                     <div class="row">
                         <a class="col-12 col-md-4" href="https://zetrc.github.io/recipes-app/" target="_blank" rel="noopener noreferrer">
@@ -228,7 +202,7 @@
             </div>
             <div class="box-text">
                 <h2>Clients</h2>
-                <h5>People i've worked with</h5>
+                <h5 class="mb-5">People i've worked with</h5>
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <img src="./images/HOHCinemaBackgroundPlayer.webp" alt="" style="background-color: black; padding: 1rem;" data-aos="flip-left">     
@@ -247,8 +221,10 @@
         <section class="contact" id="contactSection">
             <div class="sectionTitle" >Contact</div>
             <div class="contactContent" id="contactContent">
+                <!-- <h3>Let's get in touch</h3> -->
+                <img src="./images/undraw_missed_chances_k-3-cq.svg" alt="">
                 <form class="contactForm" action="POST" data-netlify="true">
-                    <i class="fas fa-comments" id="msgIcon"></i><h3>Let's get in touch</h3>
+                    <!-- <i class="fas fa-comments" id="msgIcon"></i> -->
                     <input type="text" placeholder="Name" class="inputElement" name="name" id="nameInput">
                     <input type="email" placeholder="Email" class="inputElement" name="email" id="emailInput">
                     <textarea name="" id="" cols="30" rows="10" class="inputElement" placeholder="Message" name="message" id="messageTextarea"></textarea>
@@ -281,7 +257,7 @@
     <script src="./script/jquery.min.js"></script>
     <script src="./script/slick-1.8.1/slick-1.8.1/slick/slick.js"></script>
     <script src="./script/script.js"></script>
-    <!-- <script src="./script/aos.js"></script> -->
+<!--     <script src="./script/aos.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.0.2/aos.js"></script>
     <script>
         AOS.init();
