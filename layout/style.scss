@@ -317,8 +317,13 @@ body{
                             font-weight: bold;
                         }
 
-                        h2,p{
+                        h2,
+                        p{
                             text-align:center;
+                        }
+
+                        P{
+                            color: #707e8c;
                         }
                     }
                 }
@@ -347,11 +352,11 @@ body{
         
                                     div,i{
                                         display: inline-block;   
-                                        font-size: 1.2rem;
+                                        font-size: 1.1rem;
                                     }
                                     i{
                                         color: #407bff;
-                                        font-size: 1.2rem;
+                                        font-size: 1.1rem;
                                         display: flex;
                                         align-items: center;
                                     }
@@ -360,7 +365,8 @@ body{
                                         width:20rem;
                                         margin: .6rem 0;
                                         font-weight: bold;
-                                        opacity: .6;
+                                        /* opacity: .6; */
+                                        color: #707e8c;
     
                                     }
                                     
@@ -428,12 +434,27 @@ body{
 
         .contact{
 
-            img{
-                /* width: 36rem; */
+            span{
                 width: 80%;
                 max-width: 36rem;
-                margin-right: 2.5rem;
+                img{
+                    margin-right: 2.5rem;
+                }
+
+                h3{
+                    width: 80%;
+                    margin: 0rem auto;
+                    margin-bottom: 2.5rem;
+                    font-weight: bold;
+                    color: #000;
+                    flex-basis: 100%;
+                    text-align:initial;
+                    color: $darkBlue;
+
+                }
+
             }
+
 
             i{
                 font-size:5rem;
@@ -450,16 +471,6 @@ body{
                 align-items:center;
                 justify-content:center;
                 flex-wrap: wrap;
-
-                h3{
-                    width: 80%;
-                    margin: 1rem auto;
-                    font-weight: bold;
-                    color: #000;
-                    margin-bottom: 2.5rem;
-                    flex-basis: 100%;
-
-                }
 
                 input,textarea{
                     display: block;
