@@ -34,7 +34,7 @@ section{
 }
 
 section{
-    padding-bottom: 7rem  ;
+    /* padding-bottom: 3rem  ; */
     position: relative;
 }
 
@@ -93,25 +93,25 @@ a{
 
 
 .button{
-    font-size: 1.3rem;
     font-weight: bold;
-    border-radius: 30px;
+    border-radius: 8px;
     width:fit-content;
     padding:10px 25px;
-    margin: 5px;
+    margin-right: 5px;
     margin-bottom: 5px;
     cursor: pointer;
     width: max-content;
     transition: all .3s ease;
     display:inline;
+    border: none;
 
 
 }
 
 .blue-btn{
     color: #fff;
-    border: 1px solid #407bff;
-    background-color: #407bff;
+    /* border: 1px solid #407bff; */
+    background-color: #1964b5;
     transition: all .3s ease;
 
 }
@@ -133,7 +133,7 @@ body{
     overflow-x: hidden;
 
     section{
-        margin:1.5rem 0;
+        /* margin:1.5rem 0; */
         overflow-x:hidden;
     }
 
@@ -141,13 +141,15 @@ body{
         font-size: 3rem;
         font-weight: bold;
         text-align: center;
-        width: 100%;
+        width:5rem;
         max-width:100rem;
         margin: 0 auto;
         padding-bottom: 15px;
         padding-top: 8rem;
         color: #130f40;
-        border-bottom: 5px solid #e8e8f1;
+        border-bottom: 7px solid #e8e8f1;
+        display:flex;
+        justify-content:center;
     }
 
     .navbar{
@@ -238,7 +240,7 @@ body{
             justify-content:center;
 
             .home-bg{
-                height: 54vh;
+                height: 100vh;
                 width: 100vw;
                 position: absolute;
                 top: 0;
@@ -265,6 +267,28 @@ body{
                 width: 15rem;
             }
         }
+
+        .about-me{
+            .container{
+                
+                .row{
+                    padding:5rem 0 10rem;
+                    align-items:center;
+                }
+            
+                .section-info{
+                    margin-bottom: 2rem;
+                    h1,
+                    p{
+                        margin-bottom:1.5rem;
+                    }
+                    .btn-cont{
+                        display:flex;
+                    }
+                }
+            }
+        }
+
         .about{
 
             .aboutContent{
@@ -604,4 +628,5 @@ body{
 
 
 @import "./responsive-layout";
-@import "./particles"
+@import "./particles";
+@import "./timeline"

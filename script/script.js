@@ -22,7 +22,7 @@ $(document).ready(function(){
         }, scrollTime);
       });
   
-      $("#contactButton").click(function() {
+      $(".contact-button").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#contactSection").offset().top
         }, scrollTime);
@@ -70,20 +70,6 @@ $(document).ready(function(){
           $("#navbar").find(".active-selector").removeClass("active-selector");
           $("#contactButton").addClass("active-selector")
         }
-        //runs animation on contact icon when it is visible in viewport
-        /* if ($('#msgIcon').isInViewport()) {
-          setTimeout(()=>{
-            const rotateValue = "360deg"
-            $('#msgIcon').css({
-              '-webkit-transform' : 'rotateY(' + rotateValue + ')',
-              '-moz-transform'    : 'rotateY(' + rotateValue + ')',
-              '-ms-transform'     : 'rotateY(' + rotateValue + ')',
-              '-o-transform'      : 'rotateY(' + rotateValue + ')',
-              'transform'         : 'rotateY(' + rotateValue + ')'
-            });
-          },300)
-        } */
-        
       });
   
     })
@@ -110,8 +96,65 @@ $(document).ready(function(){
 
     }
 
+    var createTimeline = function(){
+      window.sr = ScrollReveal();
+
+      if ($(window).width() < 768) {
+
+        if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+          $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+        }
+
+        sr.reveal('.js--fadeInRight', {
+          origin: 'right',
+          distance: '300px',
+          easing: 'ease-in-out',
+          duration: 800,
+        });
+
+      } else {
+  	
+      sr.reveal('.js--fadeInLeft', {
+        origin: 'left',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+      sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+  }
+  
+    sr.reveal('.js--fadeInLeft', {
+	    origin: 'left',
+	    distance: '300px',
+		  easing: 'ease-in-out',
+	    duration: 800,
+	  });
+
+	  sr.reveal('.js--fadeInRight', {
+	    origin: 'right',
+	    distance: '300px',
+	    easing: 'ease-in-out',
+	    duration: 800,
+	  });
+    }
+
+    var downloadCV = function(){
+      $("#cv-selector").click(function(){
+        window.open('./CV.pdf');
+      })
+    }
+
     slideBarToggler()
     initAutoscroll()
     hoverSection()
     ifViewportNotOnTop()
+    createTimeline()
+    downloadCV()
   });
