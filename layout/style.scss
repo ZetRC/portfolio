@@ -169,10 +169,28 @@ body{
         }
 
         span{
-            font-size:1.75rem;
+            font-size:1.5rem;
             font-weight: bold;
             letter-spacing: 0.1rem;
             height: min-content;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            text-transform:uppercase;
+            cursor:pointer;
+            transition:all .3s ease;
+
+            &:before{
+                content:"< ";
+                color:#3367d6;
+            }
+
+            &:after{
+                content:" />";
+                color:#3367d6;
+            }
+
+            &:hover{
+                color:#ccc;
+            }
         }
 
         .fa-bars{

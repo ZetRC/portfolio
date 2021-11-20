@@ -4,7 +4,7 @@ $(document).ready(function(){
       
       const scrollTime=800
   
-      $("#homeButton").click(function() {
+      $(".home-selector").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("html").offset().top
         }, scrollTime);
