@@ -445,6 +445,8 @@ body{
                     img{
                         padding:1.25rem;
                         transition: all .3s ease;
+                        box-sizing:border-box;
+                        border-radius:2rem;
                     }
                 }
 
@@ -647,4 +649,4 @@ body{
 
 @import "./responsive-layout";
 @import "./particles";
-@import "./timeline"
+@import "./timeline";
