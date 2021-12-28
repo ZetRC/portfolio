@@ -14,6 +14,16 @@ $accent: #407bff;
         margin-bottom:1.5rem;
     }
 
+    .timeline-title{
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 2.5rem;
+        /* color: #3f51b5; */
+        color: #1964b5;
+        font-weight: bold;
+    }
+        
+
     h1 {
         font-size: 200%;
         text-transform: uppercase;
@@ -183,7 +193,8 @@ $accent: #407bff;
       }
       
       .date {
-          background: $accent;
+          /* background: $accent; */
+          background: #407bff;
           display: inline-block;
           color: $text;
           padding: 8px;
