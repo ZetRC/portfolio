@@ -19,7 +19,7 @@ section{
         }
 
         h5{
-            color: #fff;
+            /* color: #fff; */
             opacity:.75;
         }
 
@@ -39,7 +39,8 @@ section{
 }
 
 .odd-background{
-    background: #130f40;
+    /* background: #130f40; */
+    background:#261e52;
     color: white;
     .sectionTitle{
         color:white !important
@@ -159,7 +160,8 @@ body{
         top: 0;
         z-index: +99;
         transition: all .5s ease;
-        background: #130f40;
+        /* background: #130f40; */
+        background:#261e52;
         color: #fff;
 
         .container{
@@ -250,7 +252,6 @@ body{
     
         .home{
             width:100%;
-            /* height: 55vh; */
             min-height: 100vh;
             position: relative;
             display:flex;
@@ -426,6 +427,7 @@ body{
         .portfolio{
             width: 100%;
             position: relative;
+            background: #f5f5f5;
 
             h3{
                 font-size: 1.8rem;
@@ -651,3 +653,4 @@ body{
 @import "./responsive-layout";
 @import "./particles";
 @import "./timeline";
+@import "./scrollbar"
