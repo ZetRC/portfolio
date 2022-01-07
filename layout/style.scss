@@ -392,7 +392,8 @@ body{
                     justify-content: space-around;
                     img{
                         width: 100%;
-                        max-width: 32rem;
+                        /* max-width: 32rem; */
+                        max-width:34rem;
                         height: auto;
                         align-self: center;
                         padding-top: 2rem;
@@ -402,37 +403,8 @@ body{
                         float: right;
                         .skill-element {
                             padding: 0 !important;
-                            .skills{
-
-                                div{
-                                    display: flex;
-                                    justify-content: space-around;
-                                    width: 100%;
-                                    padding:0 5px;
-        
-                                    div,i{
-                                        display: inline-block;   
-                                        font-size: 1.1rem;
-
-                                    }
-                                    i{
-                                        color: #407bff;
-                                        font-size: 1.1rem;
-                                        display: flex;
-                                        align-items: center;
-                                    }
-        
-                                    div{
-                                        width:20rem;
-                                        margin: .6rem 0;
-                                        font-weight: bold;
-                                        /* opacity: .6; */
-                                        color: #707e8c;
-    
-                                    }
-                                    
-                                }
-                            }
+                            min-width: 345px;
+                            margin-top:3rem;
                         }
                     }
                 }
@@ -702,4 +674,5 @@ body{
 @import "./responsive-layout";
 @import "./particles";
 @import "./timeline";
-@import "./scrollbar"
+@import "./scrollbar";
+@import "./skillbars";

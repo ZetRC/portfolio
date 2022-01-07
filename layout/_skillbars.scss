@@ -1,0 +1,55 @@
+.skillbar {
+    /* font-family: "Open Sans", "sans-serif"; */
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+    width: 100%;
+    background: #eee;
+    height: 10px;
+    border-radius: 4px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+  
+  .skillbar-title {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-weight: bold;
+    font-size: 13px;
+    color: #707e8c;
+    background: transparent !important;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+  }
+  
+  .skillbar-title span {
+    display: block;
+    background: transparent;
+    height: 10px;
+    line-height: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    min-width: 7.25rem;
+  }
+  
+  .skillbar-bar {
+    height: 10px;
+    width: 0px;
+    /* background: #6adcfa; */
+    background: #6494ff !important;
+  }
+  
+  .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    font-size: 11px;
+    height:10px;
+    line-height: 10px;
+    /* color: #444;
+    color: rgba(0, 0, 0, 0.4); */
+    color:#606060;
+  }
+  

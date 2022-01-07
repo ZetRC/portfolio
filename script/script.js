@@ -151,10 +151,19 @@ $(document).ready(function(){
       })
     }
 
+    var initSkillbars = function(){
+      jQuery('.skillbar').each(function(){
+        jQuery(this).find('.skillbar-bar').animate({
+          width:jQuery(this).attr('data-percent')
+        },2000);
+      });
+    }
+
     slideBarToggler()
     initAutoscroll()
     hoverSection()
     ifViewportNotOnTop()
     createTimeline()
     downloadCV()
+    initSkillbars()
   });
