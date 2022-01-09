@@ -159,6 +159,18 @@ $(document).ready(function(){
       });
     }
 
+    var filterProjects = function(){
+      $(".filter-selectors div").click(function(){
+        //changes filter selector color
+          $(this).parent().find(".selected-filter").removeClass("selected-filter")
+          $(this).addClass("selected-filter")
+        //filters data
+          const filter = $(this).attr("data-filter")
+          $(".projects-grid a").hide()
+          $(filter).show()
+      })
+    }
+
     slideBarToggler()
     initAutoscroll()
     hoverSection()
@@ -166,4 +178,5 @@ $(document).ready(function(){
     createTimeline()
     downloadCV()
     initSkillbars()
+    /* filterProjects() */
   });

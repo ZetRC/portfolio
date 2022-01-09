@@ -6,8 +6,6 @@
     <title>Zet Rosas</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./layout/style.css">
-    <link rel="stylesheet" href="./script/slick-1.8.1/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./script/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.0.2/aos.css">
@@ -20,7 +18,6 @@
                 <ul class="navbarContent" id="navbar-cont">
                     <li id="homeButton" class="home-selector">Home</li>
                     <li id="aboutButton">About</li>
-                    <!-- <li id="aboutButton">About My Work</li> -->
                     <li id="portfolioButton">Projects</li>
                     <li id="contactButton" class="contact-button">Contact</li>
                 </ul>
@@ -61,11 +58,12 @@
             </div>
         </section>
         <section class="about-me" id="about-me-section">
+            <div class="sectionTitle" data-aos="fade-up">About</div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="section-info" data-aos="fade-right">
-                            <h1>Hello World!</h1>
+                            <h2>Hello World!</h2>
                             <p>My name is Zet Rosas Camacho and my passion is web design and website development of usable and engaging websites,i consider myself a committed person, making sure that every project that I work on, has an innovative and outstanding distinction.</p>
                             <p>Feel free to contact me so we can have a personal interview if needed. I will be glad to assist your project or company in any way possible.</p>
                             <div class="btn-cont">
@@ -84,43 +82,49 @@
                 <div class="timeline">
                     <div class="container">
                       <div class="timeline-item">
-                        <div class="timeline-img"></div>                  
-                        <div class="timeline-content js--fadeInLeft">
-                          <h2>Front End developer at Heart of Hollywood Motion Pictures</h2>
+                        <div class="timeline-img"></div>
+                        <div class="timeline-content timeline-card js--fadeInLeft">
+                          <div class="timeline-img-header hoh-img">
+                            <h2>Developer at HOH</h2>
+                          </div>
                           <div class="date">october 2020</div>
                           <p>Responsible of creating and implementing designs for various web applications using mainly bootstrap, jquery and scss</p>
                           <p>Resposible of implementing third-party libraries, allowing a better interaction between the user and the application</p>
                           <p>Responsible of creating the front end documentation </p>
-                          <a class="bnt-more" href="http://www.heartofhollywoodcinema.com/" target="_blank" rel="noopener noreferrer">Check it out!</a>
+                          <a class="bnt-more" href="javascript:void(0)" data-toggle="modal" data-target=".modal-hoh">Check it out!</a>
                         </div>
-                      </div> 
+                      </div>   
                       <div class="timeline-item">
                         <div class="timeline-img"></div>
-                        <div class="timeline-content js--fadeInRight">
-                          <h2>Freelance developer</h2>
+                        <div class="timeline-content timeline-card js--fadeInRight">
+                          <div class="timeline-img-header rs-img">
+                            <h2>Freelance developer</h2>
+                          </div>
                           <div class="date">September 2020</div>
                           <p>Worked on a few small projects.You can check one of them in the link below</p>
-                          <a class="bnt-more" href="https://zetrc.github.io/re-test/" target="_blank" rel="noopener noreferrer">Check it out!</a>
+                          <a class="bnt-more" href="javascript:void(0)" data-toggle="modal" data-target=".modal-rs">Check it out!</a>
                         </div>
                       </div>   
                       <div class="timeline-item">
                         <div class="timeline-img"></div>
-                        <div class="timeline-content js--fadeInLeft">
+                        <div class="timeline-content timeline-card js--fadeInLeft">
+                          <div class="timeline-img-header numuss-img">
+                            <h2>Developer at Numuss SMS</h2>
+                          </div>
                           <div class="date">June 2021</div>
-                          <h2>Front end software developer at Numuss SMS</h2>
                           <p>Responsible for designing and implementing the entire layout</p>
                           <p>In charge of creating an editable dashboard according to the user's needs.</p>
-                          <a class="bnt-more" href="#/" style="cursor: not-allowed;">In development</a>
+                          <a class="bnt-more" href="javascript:void(0)" data-toggle="modal" data-target=".modal-sms">Check it out</a>
                         </div>
                       </div>   
                       <div class="timeline-item">
                         <div class="timeline-img"></div>
                         <div class="timeline-content js--fadeInRight">
-                          <h2>???</h2>
+                          <h2>?</h2>
                           <div class="date">NOW</div>
                           <p>I am always looking to work on new projects, especially if there is something new that I can learn along the way.</p>
                           <p></p>
-                          <a class="bnt-more contact-button" href="javascript:void(0)">Let's talk!</a>
+                          <a class="bnt-more contact-button" href="javascript:void(0)" >Let's talk!</a>
                         </div>
                       </div>    
                     </div>
@@ -128,7 +132,7 @@
             </div>
         </section>
         <section class="about" id="aboutSection">
-            <div class="sectionTitle" data-aos="fade-up">About</div>
+            <div class="sectionTitle" data-aos="fade-up">Skills</div>
             <div class="aboutContent" id="aboutContent" data-selector="aboutButton">
                 <div class="skillsRow">
                     <div class="skills-cont">
@@ -185,7 +189,7 @@
                             <div class="skillbar clearfix " data-percent="85%">
                                 <div class="skillbar-title" style="background: #00a8ff;"><span>Jquery</span></div>
                                 <div class="skillbar-bar" style="background: #00a8ff;"></div>
-                                <div class="skill-bar-percent">85%</div>
+                                <div class="skill-bar-percent">80%</div>
                             </div>
                             <div class="skillbar clearfix " data-percent="85%">
                                 <div class="skillbar-title" style="background: #00a8ff;"><span>Bootstrap</span></div>
@@ -216,12 +220,17 @@
             <div class="sectionTitle" data-aos="fade-up">Projects</div>
             <div class="box-text mb-5">
                 <h2>Personal Projects</h2>
-                <h5>I might not be allowed to show my work,but i can show you some cool projects of my own</h5>
+                <h5>In my spare time I like to tinker on side projects. These are some of the results.</h5>
             </div>
-            <div class="projects-grid " id="portfolioContent" data-aos="zoom-in" data-aos-delay="0">
-                <!-- <div class="container "> -->
-                    <div class="row">
-                        <a class="col-12 col-md-6 col-xl-4" href="https://zetrc.github.io/online_galery/" target="_blank" rel="noopener noreferrer">
+            <!-- <div class="filter-selectors">
+                <div data-filter=".all" class="selected-filter">All</div>
+                <div data-filter=".react">React</div>
+                <div data-filter=".jquery">Jquery</div>
+                <div data-filter=".javascript">Javascript</div>
+            </div> -->
+            <div class="projects-grid " id="portfolioContent">
+                    <div class="row" >
+                        <a data-aos="fade-up" data-aos-delay="0" class="jquery col-12 col-md-6 col-xl-4" href="https://zetrc.github.io/online_galery/" target="_blank" rel="noopener noreferrer">
                             <img src="./images/fwcom-preview_500x398.png" alt="">
                             <div class="project-info">
                                 <span>
@@ -231,7 +240,7 @@
                                 <button class="outline-btn">See more</button>
                             </div>
                         </a>
-                        <a class="col-12 col-md-6 col-xl-4" href="https://zetrc.github.io/recipes-app/" target="_blank" rel="noopener noreferrer">
+                        <a data-aos="fade-up" data-aos-delay="100" class="react col-12 col-md-6 col-xl-4" href="https://zetrc.github.io/recipes-app/" target="_blank" rel="noopener noreferrer">
                             <img src="./images/recipieCover_500x398.png" alt="">
                             <div class="project-info">
                                 <span>
@@ -241,7 +250,7 @@
                                 <button class="outline-btn">See more</button>
                             </div>
                         </a>
-                        <a class="col-12 col-md-6 col-xl-4" href="https://zetrc.github.io/ZYA/" target="_blank" rel="noopener noreferrer">
+                        <a data-aos="fade-up" data-aos-delay="200" class="col-12 col-md-6 col-xl-4" href="https://zetrc.github.io/ZYA/" target="_blank" rel="noopener noreferrer">
                             <img src="./images/zyaCover_500x398.png" alt="">
                             <div class="project-info">
                                 <span>
@@ -251,7 +260,7 @@
                                 <button class="outline-btn">See more</button>
                             </div>
                         </a>
-                        <a class="col-12 col-md-6 col-xl-4" href="https://zetrc.github.io/weather_app/" target="_blank" rel="noopener noreferrer">
+                        <a data-aos="fade-up" data-aos-delay="300" class="col-12 col-md-6 col-xl-4" href="https://zetrc.github.io/weather_app/" target="_blank" rel="noopener noreferrer">
                             <img src="./images/weapPreview.png" alt="">
                             <div class="project-info">
                                 <span>
@@ -261,7 +270,7 @@
                                 <button class="outline-btn">See more</button>
                             </div>
                         </a>
-                        <a class="col-12 col-md-6 col-xl-4" href="https://zetrc.github.io/re-test/" target="_blank" rel="noopener noreferrer">
+                        <a data-aos="fade-up" data-aos-delay="400" class="col-12 col-md-6 col-xl-4" href="https://zetrc.github.io/re-test/" target="_blank" rel="noopener noreferrer">
                             <img src="./images/rstest_500x398.png" alt="">
                             <div class="project-info">
                                 <span>
@@ -271,7 +280,7 @@
                                 <button class="outline-btn">See more</button>
                             </div>
                         </a>
-                        <a class="col-12 col-md-6 col-xl-4" href="#/" style="cursor: not-allowed;">
+                        <a data-aos="fade-up" data-aos-delay="500" class="col-12 col-md-6 col-xl-4" href="#/" style="cursor: not-allowed;">
                             <img src="./images/react-blog-preview.png" alt="">
                             <div class="project-info">
                                 <h3>React Blog</h3>
@@ -285,10 +294,10 @@
                 <h2>Clients</h2>
                 <h5 class="mb-5">I'm proud to have worked with some awesome companies:</h5>
                 <div class="row">
-                    <div class="col-12 col-md-4">
+                    <div class="col-6 col-md-4">
                         <img src="./images/HOHCinemaBackgroundPlayer.webp" alt="" style="background-color: black; padding: 1rem;" data-aos="flip-left">     
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-6 col-md-4">
                         <img src="./images/numuss sms-logos.jpeg" alt="" data-aos="flip-left">    
                     </div>
                     <div class="col-12 col-md-4">
@@ -336,12 +345,145 @@
     <div class="up-btn" id="up-btn">
         <i class="fas fa-arrow-up"></i>
     </div>
+    <!-- modal sms -->
+    <div class="modal fade modal-sms" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Project Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="project-info">
+                              <h2>
+                                  <a href="#/" style="cursor: not-allowed;">Numuss SMS(in-development)</a>
+                                </h2>
+                              <p>Numuss SMS is a mass-messaging application, you can contact your customers very easily</p>
+                              <div class="row">
+                                  <p class="col-12 col-md-4">
+                                    <i class="fas fa-check"></i>
+                                    Web design
+                                </p>
+                                  <p class="col-12 col-md-4">
+                                    <i class="fas fa-check"></i>
+                                    Javascript development
+                                </p>
+                                  <p class="col-12 col-md-4">
+                                    <i class="fas fa-check"></i>
+                                    Dynamic content
+                                </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12">
+                            <div class="img-cont">
+                                <img src="./images/sms-landing.webp" alt="">
+                            </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- modal hoh -->
+    <div class="modal fade modal-hoh" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Project Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="project-info">
+                              <h2>
+                                <a href="http://www.heartofhollywoodcinema.com/" target="_blank" rel="noopener noreferrer">Heart of Hollywood Cinema</a>
+                                </h2>
+                              <p>Heart of Hollywood Cinema is a an independent streaming platform where you can find amazing indie movies and tv shows!</p>
+                              <div class="row">
+                                  <p class="col-12 col-md-4">
+                                    <i class="fas fa-check"></i>
+                                    Web design
+                                </p>
+                                  <p class="col-12 col-md-4">
+                                    <i class="fas fa-check"></i>
+                                    Jquery development
+                                </p>
+                                  <p class="col-12 col-md-4">
+                                    <i class="fas fa-check"></i>
+                                    Long-term project
+                                </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12">
+                            <div class="img-cont">
+                                <img src="./images/www.heartofhollywoodcinema.com_.webp" alt="">
+                            </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- modal rs  -->
+    <div class="modal fade modal-rs" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Project Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="project-info">
+                              <h2>
+                                <a href="https://zetrc.github.io/re-test/" target="_blank" rel="noopener noreferrer">Real State Project</a>
+                                </h2>
+                              <p>I created a couple of templates for an upwork client</p>
+                              <div class="row">
+                                  <p class="col-12 col-md-4">
+                                    <i class="fas fa-check"></i>
+                                    Web design
+                                </p>
+                                  <p class="col-12 col-md-4">
+                                    <i class="fas fa-check"></i>
+                                    Javascript development
+                                </p>
+                                  <p class="col-12 col-md-4">
+                                    <i class="fas fa-check"></i>
+                                    Short project
+                                </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12">
+                            <div class="img-cont">
+                                <img src="./images/rs-test-preview.webp" alt="">
+                            </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!--  -->
     <script src="./script/jquery.min.js"></script>
-    <script src="./script/slick-1.8.1/slick-1.8.1/slick/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
-<!--     <script src="./script/aos.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.0.2/aos.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./script/aos.js"></script>
+    <script src="./script/scrollreveal.js"></script>
     <script>
         AOS.init();
     </script>

@@ -165,10 +165,22 @@ $accent: #407bff;
       }
       
       .timeline-item {
+
         .timeline-img-header {
-                  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('https://picsum.photos/1000/800/?random') center center no-repeat;
-                  background-size: cover;
-              }
+                  background-size: cover !important;
+        }
+
+        .numuss-img{
+            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../images/sms-landing.webp') no-repeat;
+        }
+
+        .hoh-img{
+            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../images/www.heartofhollywoodcinema.com_.webp') no-repeat;
+        }
+
+        .rs-img{
+            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../images/rs-test-preview.webp') no-repeat;
+        }
       }
       
       .timeline-img-header {
