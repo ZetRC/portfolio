@@ -145,7 +145,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #606060;
+    color: #606060 !important;
     overflow-x: hidden;
 
     section{
@@ -175,8 +175,8 @@ body{
         top: 0;
         z-index: +99;
         transition: all .5s ease;
-        /* background: #130f40; */
         background:#261e52;
+        /* background: transparent; */
         color: #fff;
 
         .container{
@@ -212,7 +212,7 @@ body{
 
         .fa-bars{
             position: absolute;
-            font-size: 2rem;
+            font-size: 1.6rem;
             display:none;
         }
 

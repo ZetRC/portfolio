@@ -33,13 +33,20 @@ $(document).ready(function(){
     var slideBarToggler=(()=>{
       
       $("#slidebar-btn").on("click",function(){
-        /* $("#navbar-cont").animate({width:'toggle'},350); */
         $("#navbar-cont").fadeToggle(300)
       })
   
       $("#homeButton , #aboutButton , #portfolioButton , #contactButton").click(function(){
         $("#navbar-cont").toggle()
       })
+
+      
+      if (window.matchMedia('only screen and (max-width: 1024px)').matches) {
+        $("section , footer").click(function(){
+          $(".navbarContent").fadeOut(300)
+        })        
+     } 
+
     })
 
     const hoverSection = (()=>{

@@ -28,10 +28,12 @@
         width: fit-content;
         height: fit-content;
         background: #fff;
-        color: black;
+        /* color: black; */
+        color:#606060;
         border: 1px solid #dcdcdc;
         border-radius: 8px;
         padding:1.5rem;
+        padding-left:0;
 
         &:after{
             content:"";
@@ -48,8 +50,12 @@
         li{
             width: 100%;
             margin:0 auto;
-            text-align: center;
-            margin-bottom: 1rem;
+            margin-bottom: 1.25rem;
+
+            i,
+            svg{
+                margin-right:.35rem;
+            }
 
             &:last-child{
                 margin-bottom:0;
@@ -58,13 +64,14 @@
         }
         }
         
-        i{
+        .fa-bars{
             display: block !important;
             top:50%;
             transform:translateY(-50%);
             right:1.5rem;
             font-size:1.8rem;
         }
+        
         .active-selector{
             color:rgb(34, 115, 248);
         }
@@ -89,6 +96,9 @@
 @media(min-width:1025px){
     .navbarContent{
         display: flex !important;
+        i,svg{
+            display:none;
+        }
     }
 }
 
