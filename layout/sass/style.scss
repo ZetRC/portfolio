@@ -1,5 +1,6 @@
 //colors
 $darkBlue :#1964b5;
+$lightBlue:#81b9ff;
 
 //general clases
 
@@ -133,9 +134,11 @@ a{
 }
 
 .blue-outline-btn{
-    color: #407bff;
-    background:#fff;
-    border: 1px solid;
+    padding: 0.5rem 1rem;
+    background: no-repeat;
+    color: #81b9ff;
+    border: 1px solid #81b9ff;
+    float: left;
 }
 
 
@@ -166,6 +169,7 @@ body{
         border-bottom: 7px solid #e8e8f1;
         display:flex;
         justify-content:center;
+        white-space:nowrap;
     }
 
     .navbar{
@@ -281,18 +285,35 @@ body{
             }
 
             .messageContainer{
-                text-align: center;
                 position: relative;
+                display:flex;
+                align-items:center;
                 z-index: +90;
+                color:#fff;
+                width:100%;
+                max-width: 1366px;
+
+                img{
+                    width:34rem;
+                }
+                
                 h1{
                     font-size: 3.5rem;
                     font-weight: bold;
                     color: white;
                 }
-
+                
                 h2{ 
                     opacity: .8;
                     color: white;
+                }
+
+                h5{
+                    color:$lightBlue;
+                }
+
+                p{
+                    max-width:35rem;
                 }
             }
 
