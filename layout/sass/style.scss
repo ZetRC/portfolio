@@ -187,6 +187,7 @@ body{
             display:flex;
             align-items: center;
             height: 100%;
+            
         }
 
         span{
@@ -291,21 +292,28 @@ body{
                 z-index: +90;
                 color:#fff;
                 width:100%;
-                max-width: 1366px;
 
                 img{
                     width:34rem;
+                    position:relative;
+                    animation:floating 1.5s infinite;
+                    animation-direction:alternate;
+                }
+
+                @keyframes floating{
+                    from{transform:translateY(-20px)}
+                    to{transform:translateY(20px)}
+                    
                 }
                 
                 h1{
-                    font-size: 3.5rem;
+                    font-size: 5rem;
                     font-weight: bold;
-                    color: white;
                 }
                 
                 h2{ 
-                    opacity: .8;
-                    color: white;
+                    font-size:4rem;
+                    opacity: .7;
                 }
 
                 h5{
